@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referencias Profesionales | Portfolio</title>
+    <meta name="description" content="Cartas de recomendación y referencias profesionales.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Background Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <main class="container">
+        <header class="hero">
+            <h1 class="hero-title">No lo digo yo, lo dicen ellos</h1>
+            <p class="hero-subtitle">Gracias por tomarte el tiempo de revisar mis referencias. Aquí encontrarás la experiencia de profesionales con los que he tenido el placer de colaborar.</p>
+        </header>
+
+        <section class="recommendations-grid">
+            <!-- Card 1 -->
+            <article class="card" data-letter="assets/carta_recomendacion_salvador.png">
+                <div class="card-content">
+                    <div class="card-header">
+                        <div class="company-logo logo-upv">
+                            <img src="assets/logo_upv.png" alt="Logo UPV" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="recommender-info">
+                            <h3 class="recommender-name">Salvador Cucó Pardillos</h3>
+                            <p class="recommender-role">Profesor Asociado, Departamento de Ingeniería Eléctrica de la UPV</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="gold-nugget">
+                            "Comprometido con el aprendizaje y la ampliación de sus conocimientos en energías renovables."
+                        </blockquote>
+                    </div>
+                    <div class="card-footer">
+                        <span class="view-btn">Ver carta original <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card" data-letter="assets/carta_recomendacion_juanjo.png">
+                <div class="card-content">
+                    <div class="card-header">
+                        <div class="company-logo logo-gh">
+                            <img src="assets/logo_gh.png" alt="Logo GH" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="recommender-info">
+                            <h3 class="recommender-name">Juan José García</h3>
+                            <p class="recommender-role">Coordinado de ingeniería de generadores en GH Induction</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="gold-nugget">
+                            "Persona comprometida, responsable, con una gran iniciativa y fiel cumplidor de sus tareas."
+                        </blockquote>
+                    </div>
+                    <div class="card-footer">
+                        <span class="view-btn">Ver carta original <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card" data-letter="assets/carta_recomendacion_juan_ignacio.png">
+                <div class="card-content">
+                    <div class="card-header">
+                        <div class="company-logo logo-qpv">
+                            <img src="assets/logo_QPV.png" alt="Logo QPV" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="recommender-info">
+                            <h3 class="recommender-name">Juan Ignacio Herraiz</h3>
+                            <p class="recommender-role">PHD y Responsable de Rendimiento y Supervisión en Qualifying Photovoltaics</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="gold-nugget">
+                            .
+                        </blockquote>
+                    </div>
+                    <div class="card-footer">
+                        <span class="view-btn">Ver carta original <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="cta-section">
+            <a href="#" class="cta-btn primary-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                Volver a mi CV
+            </a>
+            <a href="mailto:javigonza03@gmail.com" class="cta-btn secondary-btn">
+                Escribir un correo
+            </a>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Cerrar vista">&times;</button>
+        <div class="lightbox-content">
+            <div class="lightbox-loader">Cargando...</div>
+            <img src="" alt="Carta de recomendación completa" id="lightbox-img">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
