@@ -28,11 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Handle error in case image is missing
             lightboxImg.onerror = () => {
-                loader.textContent = 'Error al cargar la imagen';
-                setTimeout(() => {
-                    closeLightbox();
-                    loader.textContent = 'Cargando...';
-                }, 2000);
+                console.error("No se pudo cargar la imagen:", imgSrc);
+                loader.textContent = 'Error: No se encontró la imagen en ' + imgSrc;
+                // No lo cerramos automáticamente para que el usuario vea el mensaje y lo cierre él
             };
         });
     });
